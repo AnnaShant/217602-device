@@ -1,0 +1,162 @@
+.footer {
+  width: 1440px;
+  margin: 0 auto;
+  margin-top: 97px;
+  padding-bottom: 58px;
+  background: $footer-col;
+}
+
+.footer__wrap {
+  position: relative;
+  width: 1200px;
+  margin-left: 140px;
+}
+
+.footer__wrap::before {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 7px;
+  bottom: 22px;
+  left: 2px;
+  background: $element-bg-col;
+  opacity: 0.7;
+}
+
+.footer__logo {
+  margin-top: 65px;
+  margin-right: 675px;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+.footer-elements {
+  display: flex;
+  margin: 0;
+}
+
+.footer__elements-come,
+.footer__elements-compare,
+.footer__elements-basket {
+  margin: 0;
+  margin-top: 65px;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+.footer__elements-come svg,
+.footer__elements-compare svg,
+.footer__elements-basket svg {
+  margin-right: 7px;
+}
+
+.footer__elements-come-link,
+.footer__elements-compare-link,
+.footer__elements-basket-link {
+  font-size: $font-small;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer__elements-come-link {
+  margin-right: 43px;
+}
+
+.footer__elements-compare-link {
+  margin-right: 40px;
+}
+
+.footer__main-nav {
+  display: flex;
+  width: 1200px;
+  margin-top: 13px;
+  color: #ffffff;
+}
+
+.footer__main-nav-items {
+  display: flex;
+  margin-right: 150px;
+  font-family: $font-Gil;
+  letter-spacing: 4px;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.footer__main-nav-item {
+  opacity: 0.7;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+.footer__main-nav-link {
+  margin-right: 40px;
+}
+
+.footer__main-nav-text {
+  margin-top: 18px;
+  font-size: $font-small;
+}
+
+.footer__main-nav-text-up {
+  margin-right: 130px;
+}
+
+.footer__social {
+  margin: 46px 0 0 505px;
+
+  &--f,
+  &--in,
+  &--tw {
+  text-decoration: none;
+  opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.2;
+    }
+  }
+
+  &--f,
+  &--in {
+    margin-right: 12px;
+  }
+}
+
+.footer__logo-html {
+  position: absolute;
+  bottom: 3px;
+  right: 40px;
+  opacity: 0.7;
+
+   &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}

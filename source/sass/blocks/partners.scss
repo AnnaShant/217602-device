@@ -1,0 +1,18 @@
+.partners {
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  margin: 95px auto 108px auto;
+
+}
+
+.partners img {
+  margin-right: 90px;
+  margin-left: -50px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.partners img:hover {
+  opacity: 1;
+}

@@ -1,0 +1,249 @@
+.slider {
+  /* устанавливаем относительное позиционирование элементу */
+  position: relative;
+}
+
+.slider__items {
+  /* устанавливаем относительное позиционирование элементу */
+  position: relative;
+  /* устанавливаем элементу ширину, равную 100% */
+  width: 1160px;
+
+  margin-left: 140px;
+
+  overflow: hidden;
+}
+
+.slider__item {
+  /* устанавливаем относительное позиционирование элементу */
+  position: relative;
+  /* отключаем по умолчанию отображение всех слайдов */
+  display: none;
+  /* устанавливаем элементу ширину, равную 100% */
+  width: 1160px;
+  /* длительность анимации трансформации */
+  transition: transform 0.6s ease;
+  /* не показывать обратную сторону трансформируемого элемента */
+  backface-visibility: hidden;
+}
+
+.slider__item_active,
+.slider__item_next,
+.slider__item_prev {
+  /* отображаем слайд, если он имеет один из этих классов */
+  display: block;
+}
+
+.slider__item_next,
+.slider__item_prev {
+  /* устанавливаем абсолютное позиционирование для элемента, на который будет сменяться слайд (на время трансформации) */
+  position: absolute;
+  /* устанавливаем положение элемента, т.е. координату top */
+  top: 0;
+}
+
+.slider__item_next.slider__item_left,
+.slider__item_prev.slider__item_right {
+  /* сдвигаем элемент на 0 по горизонтали */
+  transform: translateX(0);
+}
+
+.slider__item_next,
+.slider__item_right.slider__item_active {
+  /* сдвигаем элемент на 100% по горизонтали */
+  transform: translateX(100%);
+}
+
+.slider__item_prev,
+.slider__item_left.slider__item_active {
+  /* сдвигаем элемент на -100% по горизонтали */
+  transform: translateX(-100%);
+}
+
+/* индикаторы слайдера */
+
+.slider__indicators {
+  position: absolute;
+  top: 312px;
+  right: 63px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.slider__indicator {
+  display: inline-block;
+
+  width: 4px;
+  height: 4px;
+  margin-right: 18px;
+
+  border: 3px solid #000000;
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  font-size: 0;
+
+  cursor: pointer;
+}
+
+.slider__indicator:hover {
+  opacity: 0.5;
+}
+
+.slider__indicator:last-child {
+  margin-right: 0;
+}
+
+.slider__indicator::before {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+  content: "";
+}
+
+.slider__indicator::after {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+  content: "";
+}
+
+.slider__indicator_active {
+  background-color: $col-big;
+}
+
+.slider-promo__box {
+  display: flex;
+
+  position: relative;
+
+  height: 500px;
+
+  margin: 0 auto;
+
+  background: linear-gradient(to top, #ffffff 380px, #f7e296 140px);
+}
+
+.slider-promo__box::before {
+  content: '';
+  position: absolute;
+  top: 37px;
+  right: 460px;
+  width: 100px;
+  height: 7px;
+  background: #ffffff;
+}
+
+.slider-promo__img {
+  margin-left: 90px;
+  margin-right: 60px;
+}
+
+.slider-promo__img-flutter {
+  margin-top: 60px;
+  margin-left: 30px;
+}
+
+.slider-promo__box-text {
+  width: 500px;
+  margin-top: 47px;
+  margin-left: 65px;
+  font-size: $font-small;
+}
+
+.slider-promo__box-text-slim {
+  margin-left: 105px;
+}
+
+.slider-promo__box-text-flutter {
+  margin-left: -20px;
+}
+
+.slider-promo__title {
+  width: 390px;
+  margin-bottom: 10px;
+  font-family: $font-Gil;
+  font-size: $font-big;
+}
+
+.slider-promo__text {
+  width: 480px;
+  margin-bottom: 52px;
+  line-height: 30px;
+}
+
+.slider-promo__01,
+.slider-promo__02,
+.slider-promo__03 {
+  position: absolute;
+  right: 60px;
+  top: 10px;
+}
+
+.slider-promo__btn-wrap {
+  position: relative;
+  width: 222px;
+  top: -15px;
+  cursor: pointer;
+}
+
+.slider-promo__btn {
+  position: absolute;
+  top: 17px;
+  left: 45px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: $font-Gil;
+  font-size: $font-middle;
+  letter-spacing: 4px;
+  color: #000000;
+  background: rgba(0, 0, 0, 0);
+  z-index: 2;
+
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+.slider-promo__btn-wrap:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 8px;
+  left: 2px;
+  top: 24px;
+  background: $element-bg-col;
+  z-index: 1;
+}
+
+.slider-promo__btn-wrap:hover:before {
+  content: '';
+  top: 8px;
+  padding: 16px 0;
+}
+
+.slider-promo__characteristics {
+  display: flex;
+  justify-content: space-between;
+
+  position: absolute;
+  bottom: 0;
+  right: 130px;
+
+  width: 430px;
+}
+
+.slider-promo__data {
+  font-family: $font-GilL;
+  font-size: 36px;
+  line-height: 38px;
+}

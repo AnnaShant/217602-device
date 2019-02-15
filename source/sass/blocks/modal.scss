@@ -1,0 +1,175 @@
+.modal {
+  position: relative;
+
+  width: 960px;
+
+  background-color: #ffffff;
+
+  box-shadow: 0 10px 20px #464646;
+}
+
+.modal__writetous {
+  display: none;
+
+  position: absolute;
+  top: 170%;
+  left: 25%;
+  z-index: 2;
+
+  width: 760px;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+.modal__writetous-block {
+  display: flex;
+}
+
+.modal__writetous-wrap {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 360px;
+  margin-right: 40px;
+}
+
+.modal__writetous-wrap-textarea {
+  width: 760px;
+
+  margin-top: 40px;
+}
+
+.modal__writetous-label {
+  margin-bottom: 15px;
+
+  font-family: $font-Gil;
+  font-size: 18px;
+}
+
+.modal__writetous-input {
+  width: 360px;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  background-color: #e5e5e5;
+
+  border: none;
+}
+
+.modal__writetous-textarea {
+  width: 760px;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 120px;
+
+  background-color: #e5e5e5;
+
+  border: none;
+}
+
+.modal__writetous-btn-wrap {
+  position: relative;
+
+  margin-top: 30px;
+}
+
+.modal__writetous-btn-wrap::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 1px;
+  z-index: 1;
+
+  width: 195px;
+  height: 8px;
+
+  background: $element-bg-col;
+}
+
+.modal__writetous-btn-wrap:hover:before {
+  content: '';
+  top: -9px;
+  padding: 16px 0;
+}
+
+.modal__writetous-btn {
+  position: absolute;
+  z-index: 2;
+
+  margin-left: 23px;
+
+  font-family: $font-Gil;
+  font-size: $font-middle;
+  letter-spacing: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+.modal__writetous-btn-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  width: 54px;
+  height: 54px;
+
+  background-color: $header-col;
+  background-image: url("../img/close.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+  font-family: $font-Open;
+  font-size: 14px;
+  color: $col-small;
+}
+
+::-moz-placeholder {
+  font-family: $font-Open;
+  font-size: 14px;
+  color: $col-small;
+}
+
+:-moz-placeholder {
+  font-family: $font-Open;
+  font-size: 14px;
+  color: $col-small;
+}
+
+.modal__show-writetous {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0%   {
+    transform: translateY(-2000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

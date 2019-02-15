@@ -1,0 +1,68 @@
+.sorting {
+  display: flex;
+  position: relative;
+  width: 900px;
+  padding: 10px 0 8px 73px;
+  background: #ebebeb;
+}
+
+.sorting svg {
+  position: absolute;
+  top: 30px;
+  cursor: pointer;
+}
+
+.sorting__svg-1 {
+  right: 184px;
+  opacity: 0.2;
+}
+
+.sorting__svg-1:hover {
+  opacity: 0.6;
+}
+
+.sorting__svg-1:active {
+  opacity: 1;
+}
+
+.sorting__svg-2 {
+  right: 140px;
+}
+
+.sorting__title {
+  font-family: $font-Gil;
+  font-size: $font-small;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.sorting__items {
+  margin-top: 10px;
+  margin-left: 13px;
+}
+
+.sorting__item {
+  display: inline;
+  margin-right: 20px;
+  font-family: $font-GilL;
+  font-size: $font-small;
+  cursor: pointer;
+  opacity: 0.2;
+}
+
+.sorting__item:hover {
+  opacity: 0.6;
+}
+
+.sorting__item:active {
+  opacity: 1;
+}
+
+.sorting__item-activ {
+  display: inline;
+  margin-right: 20px;
+  font-family: $font-GilL;
+  font-size: $font-small;
+  cursor: pointer;
+  opacity: 1;
+}

@@ -1,0 +1,51 @@
+.modal-map {
+  display: none;
+
+  position: absolute;
+  top: 170%;
+  left: 25%;
+  z-index: 2;
+
+  width: 960px;
+  margin: 0 auto;
+}
+
+.modal-map__btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  width: 54px;
+  height: 54px;
+
+  background-color: $header-col;
+  background-image: url("../img/close.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.modal__show-map {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0%   {
+    transform: translateY(-2000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

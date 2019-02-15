@@ -1,0 +1,140 @@
+.elements {
+  display: flex;
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.elements svg {
+  margin-right: 7px;
+}
+
+.elements__search {
+  position: relative;
+  display: flex;
+  width: 440px;
+  margin-left: 5px;
+  margin-right: 100px;
+  margin-top: 37px;
+  background: #fff;
+}
+
+.elements__search svg {
+  position: absolute;
+  top: 13px;
+  left: 0;
+}
+
+.elements__search-field {
+  display: block;
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 30px;
+  font-size: $font-small;
+  color: rgba(0, 0, 0, 0.2);
+  border: none;
+  outline: none;
+  background: $header-col;
+}
+
+.elements__search-field:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.elements__search-field:focus {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-bottom: 2px solid #000000;
+  color: rgba(0, 0, 0, 1);
+}
+
+.elements__search-field:active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.elements__search-btn {
+  position: absolute;
+  padding: 10px 20px;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  cursor: pointer;
+  background: $header-col;
+  border: 2px solid #000000;
+  outline: none;
+}
+
+.elements__search:active input.elements__search-btn,
+.elements__search:hover input.elements__search-btn,
+.elements__search:focus input.elements__search-btn {
+  opacity: 1;
+}
+
+.elements__search-btn:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.elements__search-btn:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.elements__come,
+.elements__compare,
+.elements__basket {
+  width: 100px;
+  margin-top: 47px;
+  font-family: $font-Open;
+  font-size: $font-small;
+}
+
+.elements__come:hover,
+.elements__compare:hover,
+.elements__basket:hover {
+  opacity: 0.6;
+}
+
+.elements__come:active,
+.elements__compare:active,
+.elements__basket:active {
+  opacity: 0.2;
+}
+
+.elements__basket {
+  text-align: right;
+}
+
+.elements__come-link,
+.elements__compare-link,
+.elements__basket-link {
+  text-decoration: none;
+  color: $col-big;
+}
+
+.elements__come {
+  display: flex;
+  width: 230px;
+  margin-right: 50px;
+}
+
+.elements__come svg {
+  margin: 0;
+  margin-top: 4px;
+}
+
+.elements__come-link {
+  margin-left: 10px;
+}
+
+.elements__come-link-catalog {
+  color: #ac9e69;
+}
+
+.elements__come-text {
+  margin: 0;
+  margin-left: 10px;
+}
+
+.elements__compare {
+  margin-right: 15px;
+}
